@@ -33,5 +33,12 @@ public class LineaFactura {
 		
 		return numero*cantidad;
 	}
-
+	
+	public void mostrarEnPantalla() {
+		System.out.println(
+				this.numero+ "\t" + 	
+				this.cantidad + "\t" +
+				this.precioTotal()
+				);
+	}
 }
