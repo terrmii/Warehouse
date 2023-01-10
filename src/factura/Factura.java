@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 
+/**
+ * 
+ * @author ${Arnold Bermell}
+ *
+ */
+
 public class Factura {
 
 	private static int IVA = 21;
@@ -92,4 +98,8 @@ public class Factura {
 		}
 	}
 	
+	public void guardarEnFichero() {
+		//SIN TERMINAR
+		viva bolivia
+	}
 }
