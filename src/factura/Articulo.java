@@ -66,6 +66,14 @@ public abstract class Articulo  {
 	    incrementarStock = this.stock + incrementarStock;
 	}
 	
+	public void disminuirStock(int disminuirStock) {
+		Scanner sc = new Scanner(System.in);
+	    disminuirStock = sc.nextInt();
+	    sc.close();
+	    
+	    disminuirStock = this.stock + disminuirStock;
+	}
+	
 	public abstract void visualizarArticulo();
 	public abstract boolean saludable();
 	public abstract void precioTotal();

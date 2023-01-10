@@ -8,7 +8,7 @@ package factura;
 public class LineaFactura {
 	private int numero;
 	private int cantidad;
-	//private Articulo articulo;
+	private Articulo articulo;
 	
 	public int getNumero() {
 		return numero;
@@ -29,6 +29,14 @@ public class LineaFactura {
 		this.cantidad = cantidad;
 	}
 	
+	public Articulo getArticulo() {
+		return articulo;
+	}
+
+
+	public void setArticulo(Articulo articulo) {
+		this.articulo = articulo;
+	}
 	
 	//METODOS
 	public double precioTotal() {
@@ -40,7 +48,11 @@ public class LineaFactura {
 		System.out.println(
 				this.numero+ "\t" + 	
 				this.cantidad + "\t" +
+				this.articulo + "\t" +
 				this.precioTotal()
 				);
 	}
+
+
+
 }
