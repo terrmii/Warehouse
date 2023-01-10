@@ -55,8 +55,15 @@ public abstract class Articulo  {
 	
 	//METODOS
 	
+	/*
+	 * REVISAR INCREMENTAR STOCK
+	 */
 	public void incrementarStock(int incrementarStock) {
-		Scanner sc = New Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
+	    incrementarStock = sc.nextInt();
+	    sc.close();
+	    
+	    incrementarStock = this.stock + incrementarStock;
 	}
 	
 	public abstract void visualizarArticulo();
