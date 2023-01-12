@@ -9,6 +9,15 @@ import java.util.Scanner;
 
 public abstract class Articulo  {
 
+	public Articulo(String code, String name, String mark, int capacidadBotella,double precio,int stock) {
+		this.code = code;
+		this.name = name;
+		this.mark = mark;
+		this.capacidadBotella = capacidadBotella;
+		this.precio = precio;
+		this.stock = stock;
+	}
+	
 	private String code;
 	private String name;
 	private String mark;

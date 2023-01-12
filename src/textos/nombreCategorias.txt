@@ -1,0 +1,3 @@
+refresco:code:name:mark:capacidadBotella:precio:stock:sabor:zumo:gaseoso:cantidadAzucar
+vino:code:name:mark:capacidadBotella:precio:stock:color:origen:anio:tipoDeUva:gradosAlcohol
+cerveza:code:name:mark:capacidadBotella:precio:stock:origen:cerales:gradosAlcohol
