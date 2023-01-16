@@ -22,7 +22,9 @@ public class GestorAlmacen {
 		int opcionmenu;
 		
 		do {
-			System.out.println("Eligue una opcion");
+			System.out.println("-----------MENU---------\n"+venta+". Realizar venta\n"+compra+
+					". Realizar compra\n"+articulos_saludables+". Ver articulos saludables\n"+articulo_mas_caro+". Ver articulo mas caro\n"
+					+articulo_menor_stock+". Ver los articulos con menos stock que x\n"+salir+". Salir");
 			opcionmenu = sc.nextInt();
 
 			switch(opcionmenu) {
@@ -40,11 +42,14 @@ public class GestorAlmacen {
 			case articulo_menor_stock:
 				break;
 				
+			default:
+				System.out.println("Opcion incorrecta");
+				
 			}
 			
 
 		} while (opcionmenu != salir);
-		
+
 	}
 }
 
