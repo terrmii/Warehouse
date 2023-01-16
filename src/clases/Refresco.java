@@ -9,9 +9,9 @@ public class Refresco extends Articulo {
 	private Boolean gaseoso;
 	private int cantidadAzucar;
 	
-	public Refresco(String code, String name, String mark, int capacidadBotella,
+	public Refresco(String categoria, String code, String name, String mark, int capacidadBotella,
             double precio, int stock, String sabor, boolean zumo, boolean gaseoso, int cantidadAzucar) {
-        super(code, name, mark, capacidadBotella, precio, stock);
+        super(categoria, code, name, mark, capacidadBotella, precio, stock);
         this.sabor = sabor;
         this.zumo = zumo;
         this.gaseoso = gaseoso;
@@ -47,7 +47,7 @@ public class Refresco extends Articulo {
 	
 	public void visualizarPropiedades(){
 		
-		System.out.println("Sabor: "+this.sabor+"\n Zumo: "+this.zumo+"\n Gaseoso: "+this.gaseoso+"\n cantidadAzucar: "+this.cantidadAzucar);
+		System.out.println(super.toString()+"Sabor: "+this.sabor+"\n Zumo: "+this.zumo+"\n Gaseoso: "+this.gaseoso+"\n cantidadAzucar: "+this.cantidadAzucar);
 	}	
 	
 	public Boolean esSaludable() {

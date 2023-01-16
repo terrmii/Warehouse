@@ -4,9 +4,9 @@ import factura.Articulo;
 
 public class Vino extends Articulo implements Alcoholico{
 
-	public Vino(String code, String name, String mark, int capacidadBotella, double precio, int stock, String color
+	public Vino(String categoria, String code, String name, String mark, int capacidadBotella, double precio, int stock, String color
 			,String origen, int anio, String tipoDeUva, double gradosAlcohol) {
-		super(code, name, mark, capacidadBotella, precio, stock);
+		super(categoria, code, name, mark, capacidadBotella, precio, stock);
 		
 		this.color = color;
 		this.origen = origen;

@@ -9,7 +9,8 @@ import java.util.Scanner;
 
 public abstract class Articulo  {
 
-	public Articulo(String code, String name, String mark, int capacidadBotella,double precio,int stock) {
+	public Articulo(String categoria, String code, String name, String mark, int capacidadBotella,double precio,int stock) {
+		this.categoria = categoria;
 		this.code = code;
 		this.name = name;
 		this.mark = mark;
@@ -18,6 +19,7 @@ public abstract class Articulo  {
 		this.stock = stock;
 	}
 	
+	private String categoria;
 	private String code;
 	private String name;
 	private String mark;
@@ -25,6 +27,13 @@ public abstract class Articulo  {
 	private double precio;
 	private int stock;
 	
+	
+	public String getCategoria() {
+		return categoria;
+	}
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
 	public String getCode() {
 		return code;
 	}
@@ -68,24 +77,20 @@ public abstract class Articulo  {
 	 * REVISAR INCREMENTAR STOCK
 	 */
 	public void incrementarStock(int incrementarStock) {
-		Scanner sc = new Scanner(System.in);
-	    incrementarStock = sc.nextInt();
-	    sc.close();
 	    
-	    incrementarStock = this.stock + incrementarStock;
+	    this.stock = this.stock + incrementarStock;
 	}
 	
 	public void disminuirStock(int disminuirStock) {
-		Scanner sc = new Scanner(System.in);
-	    disminuirStock = sc.nextInt();
-	    sc.close();
 	    
-	    disminuirStock = this.stock + disminuirStock;
+	    this.stock = this.stock + disminuirStock;
 	}
 	
 	public abstract void visualizarArticulo();
 	public abstract boolean saludable();
 	public abstract void precioTotal();
 		
-	
+	public String toString() {
+		return "Codigo" + code + "\nNombre" + name + mark + "\n CapacidadBotella:"+capacidadBotella + "\nPrecio:"+precio + "\nStock:"+stock;
+	}
 }

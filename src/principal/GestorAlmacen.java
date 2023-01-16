@@ -1,6 +1,9 @@
 package principal;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
+
+import clases.Almacen;
 
 /**
  * 
@@ -10,7 +13,10 @@ import java.util.Scanner;
 
 public class GestorAlmacen {
 
-	public void run() {
+	public void run() throws FileNotFoundException {
+		
+		Almacen almacen = new Almacen();
+		almacen.cargarDatos();
 		
 		final int venta = 1;
 		final int compra = 2;

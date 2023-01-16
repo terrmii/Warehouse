@@ -4,9 +4,9 @@ import factura.Articulo;
 
 public class Cerveza extends Articulo implements Alcoholico{
 	
-	public Cerveza(String code, String name, String mark, int capacidadBotella, double precio, int stock,
+	public Cerveza(String categoria, String code, String name, String mark, int capacidadBotella, double precio, int stock,
 			String origen, String cereales, double gradosAlcohol) {
-		super(code, name, mark, capacidadBotella, precio, stock);
+		super(categoria, code, name, mark, capacidadBotella, precio, stock);
 		// TODO Auto-generated constructor stub
 		
 		this.origen = origen;
